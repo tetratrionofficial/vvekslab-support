@@ -1,0 +1,111 @@
+
+
+.text-center {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  max-height:100%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  /* border: 1px solid #524e4e; */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(13, 77, 145, 0.879);
+  transition: transform 0.2s ease-in-out;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.card-text {
+  color: #00173d;
+  font-size: 1rem;
+}
+.card-link {
+  margin-top: 10px;
+}
+.card-link a {
+  margin: 0 5px;
+  color: inherit;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  /* background-image:linear-gradient(to left, lightblue, rgb(247, 198, 198)); */
+  background-image:linear-gradient(to left, lightblue, white)
+}
+.card:hover .card-title{
+  color: #365ED9;
+  margin-bottom: 10px;
+  /* font-size:1.25rem ; */
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card1-img-top {
+  height:40vh;
+  width: 100%;
+}
+
+.card-link{
+  letter-spacing: 5px;
+}
+
+
+  .card1:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    /* background-image:linear-gradient(to left, lightblue, rgb(247, 198, 198)); */
+    background-image:linear-gradient(to left, lightblue, white)
+  }
+
+.card1:hover .card-title{
+color: #365ED9;
+}
+a i{
+transition: all 0.3s linear;
+}
+a:hover i{
+transform: scale(1.5);
+color: blue;
+}
+.cards:hover{
+transform: translateY(-5px);
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(13, 77, 145, 0.879);
+}
+.btn{
+align-items: right;
+}
+@media (max-width: 768px) {
+.col {
+  flex: 0 0 calc(50% - 20px);
+}
+}
+
+@media (max-width: 576px) {
+.col {
+  flex: 0 0 100%;
+}
+}
+
